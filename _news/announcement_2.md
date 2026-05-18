@@ -6,3 +6,4 @@ related_posts: false
 ---
 
 Presented **SAT-NGP** at **IGARSS 2024** in Athens. Code is now public on [GitHub](https://github.com/Ellimac0/SAT-NGP).
+ 
