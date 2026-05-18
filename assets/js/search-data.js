@@ -412,12 +412,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-on-the-postdoc-job-market-looking-for-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits-email",
           title: 'I’m on the postdoc job market! Looking for positions on neural scene representations,...',
           description: "",
-          section: "News",},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "teachings-data-science-fundamentals",
+          section: "News",},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
