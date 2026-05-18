@@ -409,8 +409,8 @@ ninja.data = [{
           section: "News",},{id: "news-presented-snake-nerf-at-the-3d-vast-workshop-at-iccv-2025-in-honolulu-slides-and-poster-coming-soon",
           title: 'Presented Snake-NeRF at the 3D-VAST workshop at ICCV 2025 in Honolulu. Slides and...',
           description: "",
-          section: "News",},{id: "news-i-m-on-the-postdoc-job-market-looking-for-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits-email",
-          title: 'I’m on the postdoc job market! Looking for positions on neural scene representations,...',
+          section: "News",},{id: "news-looking-for-postdoc-job-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits",
+          title: 'Looking for postdoc job positions on neural scene representations, large-scale 3D reconstruction, or...',
           description: "",
           section: "News",},{
         id: 'social-cv',
