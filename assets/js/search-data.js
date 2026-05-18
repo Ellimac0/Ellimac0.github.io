@@ -417,9 +417,9 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-mon-projet",
+          title: 'Mon Projet',
+          description: "a project featuring a research poster",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{
