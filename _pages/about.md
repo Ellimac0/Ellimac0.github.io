@@ -26,9 +26,9 @@ latest_posts:
 ---
 
 Hi, I'm **Camille** — a final-year PhD candidate at the **French Space Agency
-(CNES)** in Toulouse, supervised by [Bruno Vallet](https://www.umr-lastig.fr/),
-Dawa Derksen, and Alexandre Constantin. My thesis is conducted in collaboration
-with the [LASTIG](https://www.umr-lastig.fr/) lab at IGN /
+(CNES)** in Toulouse, supervised by Bruno Vallet, Dawa Derksen, and Alexandre
+Constantin. My thesis is conducted in collaboration with the
+[LASTIG](https://www.umr-lastig.fr/) lab (IGN / Univ Gustave Eiffel / ENSG),
 where I'm enrolled at Univ Gustave Eiffel.
 
 My research sits at the intersection of **3D computer vision, neural rendering,
@@ -44,12 +44,11 @@ setting is for neural methods. A view-dependent appearance model that makes
 perfect sense on a synthetic Blender scene becomes deeply weird when the
 "camera" is a pushbroom sensor 700 km up and the "lighting" is the sun three
 weeks later — and once you've made it work on a single crop, the question
-immediately becomes: how do you scale this to a whole region, a whole
-country? **[Snake-NeRF](https://github.com/Ellimac0/Snake-NeRF)** training 
-is still expensive in time : there's no free lunch ...  
-but it might be the cheapest one on the menu right now.
+immediately becomes: how do you scale this to a whole region, a whole country?
+Training is still expensive — there's no free lunch — but I think we're getting
+close to the cheapest one on the menu.
 
-My PhD has focused on two main contributions:
+So far, my PhD has produced two main contributions:
 
 - **[SAT-NGP](https://github.com/Ellimac0/SAT-NGP)** (IGARSS 2024) — bringing
   satellite NeRF training down from tens of hours to about 15 minutes by
