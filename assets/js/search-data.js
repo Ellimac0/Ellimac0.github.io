@@ -412,12 +412,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-on-the-postdoc-job-market-looking-for-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits-email",
           title: 'I’m on the postdoc job market! Looking for positions on neural scene representations,...',
           description: "",
-          section: "News",},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning/";
-            },},{
+          section: "News",},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
