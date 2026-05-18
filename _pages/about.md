@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (Toulouse), working on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with <a href="https://www.umr-lastig.fr/">LASTIG</a> (IGN / Univ Gustave Eiffel / ENSG).
+subtitle: Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (currently in Paris !), working on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with <a href="https://www.umr-lastig.fr/">LASTIG</a> (IGN / Univ Gustave Eiffel / ENSG).
 
 profile:
   align: right
@@ -35,9 +35,9 @@ What keeps pulling me back to this problem is how unforgiving the satellite sett
 
 So far, my PhD has produced two main contributions:
 
-- **[SAT-NGP](https://github.com/Ellimac0/SAT-NGP)** (IGARSS 2024) — bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.
+- **[SAT-NGP](https://ieeexplore.ieee.org/document/10641775)** (IGARSS 2024) — bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.
 
-- **[Snake-NeRF](https://github.com/Ellimac0/Snake-NeRF)** (ICCV Workshops 2025) — an out-of-core framework that scales NeRF to very large geographic areas on a single GPU, using 3D tile partitioning, a segmented sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear time complexity, no quality compromise.
+- **[Snake-NeRF](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html)** (ICCV Workshops 2025) — an out-of-core framework that scales NeRF to very large geographic areas on a single GPU, using 3D tile partitioning, a segmented sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear time complexity, no quality compromise.
 
 ---
 
