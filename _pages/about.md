@@ -2,33 +2,62 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (Toulouse), working on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with <a href="https://www.umr-lastig.fr/">LASTIG</a> (IGN / Univ Gustave Eiffel).
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Office [numéro]</p>
+    <p>[Adresse du labo]</p>
+    <p>[Ville], France</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false # includes a list of the newest posts
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm **Camille** — a final-year PhD candidate at the **French Space Agency
+(CNES)** in Toulouse, working under the supervision of [Bruno Vallet](https://www.umr-lastig.fr/bruno-vallet/),
+Dawa Derksen, and Alexandre Constantin. My thesis is conducted in collaboration
+with the [LASTIG](https://www.umr-lastig.fr/) lab at IGN / Univ Gustave Eiffel,
+where I'm enrolled at ENSG.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research sits at the intersection of **3D computer vision, neural rendering,
+and Earth observation**. I work on adapting Neural Radiance Fields (NeRF) to
+satellite imagery — a setting where classical stereo-vision pipelines struggle
+with shadows, seasonal variation, and transient objects across acquisitions
+taken months or years apart.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+What I find genuinely exciting about this problem is that satellite NeRFs sit
+at a sweet spot where ideas from graphics, geometry, and remote sensing all
+have to talk to each other. A view-dependent appearance model that makes
+perfect sense on a synthetic Blender scene becomes deeply weird when the
+"camera" is a pushbroom sensor 700 km up and the "lighting" is the sun three
+weeks later.
+
+My PhD has focused on two main contributions:
+
+- **SAT-NGP** — bringing satellite NeRF training down from tens of hours to
+  about 15 minutes by combining efficient sampling with multi-resolution hash
+  encoding (à la Instant-NGP), with no loss in reconstruction quality.
+- **Snake-NeRF** — an out-of-core framework that scales NeRF to very large
+  geographic areas on a single GPU, using 3D tile partitioning, a segmented
+  sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear
+  time complexity, no quality compromise.
+
+Before the PhD, I earned my master's in Artificial Intelligence from
+Paul Sabatier University (Toulouse) in 2023.
+
+I'm currently looking for a **postdoctoral position** starting in [mois année],
+ideally on topics around neural scene representations, large-scale 3D
+reconstruction, or the geometry–vision–remote sensing interface. Don't
+hesitate to reach out by email if my profile fits something you're building.
