@@ -57,7 +57,7 @@ My PhD has focused on two main contributions:
 Before the PhD, I earned my master's in Artificial Intelligence from
 Paul Sabatier University (Toulouse) in 2023.
 
-I'm currently looking for a **postdoctoral position** starting in [mois année],
+I'm currently looking for a **postdoctoral position** starting in November 2026,
 ideally on topics around neural scene representations, large-scale 3D
 reconstruction, or the geometry–vision–remote sensing interface. Don't
 hesitate to reach out by email if my profile fits something you're building.
