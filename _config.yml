@@ -45,13 +45,13 @@ external_services:
 # Email & Social
 # -----------------------------------------------------------------------------
 
-email: "camille.billouard@cnes.fr" # TODO: confirm institutional email
+email: "camillebillouard314@gmail.com" # TODO: confirm institutional email
 github_username: Ellimac0
 gitlab_username:
 twitter_username:
 mastodon_username:
-linkedin_username: # TODO: your LinkedIn username (the part after /in/)
-scholar_userid: # TODO: your Google Scholar ID
+linkedin_username: camille-b-3v1415926 # TODO: your LinkedIn username (the part after /in/)
+scholar_userid: CImHtKMAAAAJ # TODO: your Google Scholar ID
 semanticscholar_id:
 whatsapp_number:
 orcid_id: # TODO: your ORCID ID (without the URL)
