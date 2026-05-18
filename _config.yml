@@ -17,7 +17,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: computer vision, neural radiance fields, NeRF, LiDAR, 3D reconstruction, remote sensing, deep learning, PhD
 lang: en
-icon: 🧊 # favicon emoji (or replace with an image name in /assets/img/)
+icon: 🎓 # favicon emoji (or replace with an image name in /assets/img/)
 
 url: https://ellimac0.github.io
 baseurl: # leave empty for root (your repo is named <user>.github.io, so no subpath)
@@ -168,9 +168,9 @@ collections:
       layout: post
     output: true
   projects:
-    output: true
+    output: false
   teachings:
-    output: true
+    output: false
 
 announcements:
   enabled: true
@@ -178,7 +178,7 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 
