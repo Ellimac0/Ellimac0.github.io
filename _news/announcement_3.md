@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-07-15
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+**Snake-NeRF** has been accepted at the **3D-VAST workshop, ICCV 2025**! Paper, code, and project page now available — see [Publications](/publications/).
