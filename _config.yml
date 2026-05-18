@@ -54,13 +54,9 @@ footer_fixed: true
 # Dimensions
 max_width: 800px
 
-# TODO: add layout settings (single page vs. multi-page)
-
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
-# Display links and images when posts are shared on social media.
-# Set to true and your site will include OG and Schema.org metadata for sharing.
 serve_og_meta: true
 serve_schema_org: true
 og_image: # TODO: add /assets/img/og.jpg for nicer link previews on LinkedIn/X/Slack
@@ -69,38 +65,38 @@ og_image: # TODO: add /assets/img/og.jpg for nicer link previews on LinkedIn/X/S
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: Ellimac0 # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: # your X handle
-mastodon_username: # your fediverse address, e.g. example@mastodon.social
+github_username: Ellimac0
+gitlab_username:
+twitter_username:
+mastodon_username:
 linkedin_username: # TODO: your LinkedIn user name (the part after /in/)
-scholar_userid: # TODO: your Google Scholar ID (found in the URL of your Scholar profile)
-semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+scholar_userid: # TODO: your Google Scholar ID
+semanticscholar_id:
+whatsapp_number:
 orcid_id: # TODO: your ORCID ID (without the URL)
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-youtube_id: # YouTube channel id, e.g. UCfXTOXuhInIBSf3i_5C-uTQ
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-wikipedia_id: # your wikipedia id (Case sensitive)
-strava_userid: # your strava userid
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-discord_id: # your discord id (18-digit unique numerical identifier)
-zotero_username: # your zotero user id (string of integers)
-osf_id: # your OSF id, hex string of length 5 or 24, found in the URL of your profile, e.g. 12ab3 for https://osf.io/12ab3/
-google_analytics: # your Google Analytics tracking ID (format: G-XXXXXXXXXX)
+medium_username:
+quora_username:
+publons_id:
+research_gate_profile:
+blogger_url:
+work_url:
+youtube_id:
+keybase_username:
+wikidata_id:
+wikipedia_id:
+strava_userid:
+stackoverflow_id:
+kaggle_id:
+lastfm_id:
+spotify_id:
+pinterest_id:
+unsplash_id:
+instagram_id:
+facebook_id:
+discord_id:
+zotero_username:
+osf_id:
+google_analytics:
 
 contact_note: >
   Best way to reach me is via email.
@@ -112,20 +108,17 @@ contact_note: >
 blog_name: blog
 blog_description: thoughts, notes, and research log
 permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+lsi: false
 
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: # put your disqus shortname
+disqus_shortname:
 giscus:
-  repo: # <github-username>/<github-repo>
+  repo:
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
 external_sources:
 
 # -----------------------------------------------------------------------------
@@ -143,21 +136,20 @@ collections:
     permalink: /projects/:path/
 
 news_limit: 5
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_move_to_top_date: # date in the future to move news to the top of the page
+news_scrollable: true
+news_move_to_top_date:
 
-# Collections
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the same page
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -173,8 +165,6 @@ scholar:
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocesses your bibtex to allow MathJax to render the equations.
 
   replace_strings: true
   join_strings: true
@@ -192,26 +182,24 @@ scholar:
 
   show_bibtex_button: true
   show_abstract_button: true
-  show_diff_badge_button: true # show "diff" button to compare bib changes
-  show_thumbnail: true # show thumbnail of paper to the left of the title
+  show_diff_badge_button: true
+  show_thumbnail: true
 
-enable_publication_thumbnails: true # publication thumbnails (images)
+enable_publication_thumbnails: true
 enable_publication_badges:
-  altmetric: false # citation badge from altmetric.com
-  dimensions: false # citation badge from dimensions.ai
-  google_scholar: false # citation badge from Google Scholar
-  inspirehep: false # citation badge from inspirehep.net
-  isidore: false # citation badge from isidore.science
-  semanticscholar: false # citation badge from semanticscholar.org
+  altmetric: false
+  dimensions: false
+  google_scholar: false
+  inspirehep: false
+  isidore: false
+  semanticscholar: false
 
-# Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, dimensions, google_scholar_id, video, additional_info, annotation, editor, journal_abbr, isidore, inspirehep_id, semanticscholar]
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes
 # -----------------------------------------------------------------------------
 
-# These are the defaults
 external_links:
   enabled: true
   rel: external nofollow noopener
@@ -223,7 +211,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: true
   widths:
     - 480
     - 800
@@ -243,29 +231,31 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 jekyll_diff:
-  hide: false # automatically hide diff badges for unchanged entries
+  hide: false
 
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
-enable_panelbear_analytics: false # enables panelbear analytics
+enable_google_analytics: false
+enable_panelbear_analytics: false
 enable_google_verification: false
-enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arrangement
-enable_math: true # enables MathJax
-enable_tooltips: false # enables tooltips by default for citations and abbreviations
-enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables social icons in the navbar
-enable_project_categories: true # enables categorization of projects into multiple categories
-enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to scroll position
-enable_video_embed: true # enables video embedding (e.g., YouTube videos)
+enable_bing_verification: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: true
+enable_progressbar: true
+enable_video_embed: true
 
 # -----------------------------------------------------------------------------
-# Library versions
+# Third-party libraries
 # -----------------------------------------------------------------------------
+# All version pins for external libraries must live under `third_party_libraries`.
+# The jekyll-3rd-party-libraries plugin reads this block and will crash if absent.
 
 third_party_libraries:
   academicons:
