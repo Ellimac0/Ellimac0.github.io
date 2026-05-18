@@ -30,7 +30,7 @@ We worked hard, iterated, and finally produced something worth sharing.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        <iframe src="{{ '/assets/pdf/poster_iccv-2.pdf' | relative_url }}"
+        <iframe src="{{ '/assets/pdf/poster_iccv-2.pdf'}}"
                 width="100%"
                 height="800px"
                 style="border: none; border-radius: 8px;"
