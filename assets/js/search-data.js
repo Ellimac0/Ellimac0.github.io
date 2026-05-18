@@ -412,12 +412,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-on-the-postdoc-job-market-looking-for-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits-email",
           title: 'I’m on the postdoc job market! Looking for positions on neural scene representations,...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
+          section: "News",},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
