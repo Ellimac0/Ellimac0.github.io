@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "3rd year PhD student at CNES 🚀 (French Space Agency) & IGN 🏙️🌳 (French Mapping Agency) " # the website title (if blank, full name will be used instead)
+title: "Camille Billouard" # the website title (if blank, full name will be used instead)
 first_name: "Camille"
 middle_name:
 last_name: "Billouard"
-email: "camillebillouard314@gmail.com"
+email: "camille.billouard@cnes.fr" # TODO: replace with your institutional email if preferred
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Camille Billouard, PhD candidate in 3D computer vision
   and neural rendering for satellite imagery at CNES, in collaboration with
@@ -15,11 +15,10 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>
   with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> theme.
 
-icon: 🧠 # the emoji used as the favicon
+icon_html: <i class="fa-solid fa-cube"></i> # favicon: cube icon (3D/CV theme)
 keywords: computer vision, neural radiance fields, NeRF, LiDAR, 3D reconstruction, remote sensing, deep learning, PhD
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon_html: <i class="fa-solid fa-cube"></i> # if you want to use an icon instead of an emoji
 
 # -----------------------------------------------------------------------------
 # Server
@@ -64,7 +63,7 @@ max_width: 800px
 # Set to true and your site will include OG and Schema.org metadata for sharing.
 serve_og_meta: true
 serve_schema_org: true
-og_image: # The site-wide (default) OG image, displayed when sharing the home page.
+og_image: # TODO: add /assets/img/og.jpg for nicer link previews on LinkedIn/X/Slack
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -74,11 +73,11 @@ github_username: Ellimac0 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your X handle
 mastodon_username: # your fediverse address, e.g. example@mastodon.social
-linkedin_username: # your LinkedIn user name (the part after /in/)
-scholar_userid: # your Google Scholar ID (found in the URL of your Scholar profile)
+linkedin_username: # TODO: your LinkedIn user name (the part after /in/)
+scholar_userid: # TODO: your Google Scholar ID (found in the URL of your Scholar profile)
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID (without the URL)
+orcid_id: # TODO: your ORCID ID (without the URL)
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -165,8 +164,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: ["[Nom]"]
-  first_name: ["[Prénom]", "[P.]"]
+  last_name: ["Billouard"]
+  first_name: ["Camille", "C."]
 
   style: apa
   locale: en
