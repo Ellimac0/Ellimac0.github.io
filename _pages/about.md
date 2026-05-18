@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (currently in Paris !), working on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with <a href="https://www.umr-lastig.fr/">LASTIG</a> (IGN / Univ Gustave Eiffel / ENSG).
+subtitle: 
 
 profile:
   align: right
@@ -21,9 +21,8 @@ latest_posts:
   limit: 3
 ---
 
-Hi, I'm **Camille** — I'm supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin, and enrolled at Univ Gustave Eiffel.
-
-I work on adapting Neural Radiance Fields (NeRF) to satellite imagery — a setting where neural methods have shown elegant ways to handle the messiness of multi-date acquisitions (shadows, seasonal variation, transient objects), but where two practical barriers stand in the way of real use: training takes tens of hours, and existing methods don't scale beyond small scenes.
+Hi, I'm **Camille** — Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (currently in Paris !), supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin.
+I work on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with LASTIG (IGN / Univ Gustave Eiffel / ENSG). More specifically, I adapt Neural Radiance Fields (NeRF) to a setting where neural methods have shown elegant ways to handle the messiness of multi-date acquisitions (shadows, seasonal variation, transient objects), but where two practical barriers stand in the way of real use: training takes tens of hours, and existing methods don't scale beyond small scenes.
 
 What keeps pulling me back to this problem is how unforgiving the satellite setting is for neural methods. A view-dependent appearance model that makes perfect sense on a synthetic Blender scene becomes deeply weird when the "camera" is a pushbroom sensor 700 km up and the "lighting" is the sun three weeks later — and once you've made it work on a single crop, the question immediately becomes: how do you scale this to a whole region, a whole country? Training is still expensive — there's no free lunch — but I think we're getting close to the cheapest one on the menu.
 
