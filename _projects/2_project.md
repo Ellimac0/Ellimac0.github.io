@@ -39,5 +39,5 @@ We worked hard, iterated, and finally produced something worth sharing.
     </div>
 </div>
 <div class="caption">
-    Full research poster. You can also download it <a href="{'/assets/pdf/poster_iccv-2.pdf' | relative_url }">here</a>.
+    Full research poster. You can also download it <a href="assets/pdf/poster_iccv-2.pdf">here</a>.
 </div>
