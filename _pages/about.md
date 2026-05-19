@@ -20,10 +20,10 @@ latest_posts:
   scrollable: true
   limit: 3
 ---
+
 <style>
   .profile { width: 20% !important; }
 </style>
-
 
 Hi, I'm Camille — a final-year PhD candidate at <a href="https://cnes.fr/">CNES</a>, based in Paris, supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin.
 My research focuses on neural rendering for large-scale 3D reconstruction from satellite imagery. The core challenge: existing methods are slow to train and fail to scale beyond small scenes — both critical barriers to real-world use.
