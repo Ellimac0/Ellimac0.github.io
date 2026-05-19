@@ -398,12 +398,7 @@ ninja.data = [{
           section: "News",},{id: "news-looking-for-postdoc-job-positions-on-neural-scene-representations-large-scale-3d-reconstruction-or-the-vision-geometry-remote-sensing-interface-get-in-touch-if-my-profile-fits",
           title: 'Looking for postdoc job positions on neural scene representations, large-scale 3D reconstruction, or...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "Bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-snake-nerf",
+          section: "News",},{id: "projects-snake-nerf",
           title: 'Snake-NeRF',
           description: "An out-of-core framework that scales NeRF to very large geographic areas on a single GPU, using 3D tile partitioning, a segmented sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear time complexity, no quality compromise.",
           section: "Projects",handler: () => {
