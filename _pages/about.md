@@ -7,10 +7,10 @@ subtitle:
 profile:
   align: right
   image: ma_photo.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -21,18 +21,18 @@ latest_posts:
   limit: 3
 ---
 
-Hi, I'm **Camille** — Final-year PhD candidate at <a href="https://cnes.fr/">CNES</a> (currently in Paris !), supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin.
-I work on neural rendering for large-scale 3D reconstruction from satellite imagery — in collaboration with LASTIG (IGN / Univ Gustave Eiffel / ENSG). More specifically, I adapt Neural Radiance Fields (NeRF) to a setting where neural methods have shown elegant ways to handle the messiness of multi-date acquisitions (shadows, seasonal variation, transient objects), but where two practical barriers stand in the way of real use: training takes tens of hours, and existing methods don't scale beyond small scenes.
+Hi, I'm Camille — a final-year PhD candidate at <a href="https://cnes.fr/">CNES</a>, based in Paris, supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin.
+My research focuses on neural rendering for large-scale 3D reconstruction from satellite imagery. The core challenge: existing methods are slow to train and fail to scale beyond small scenes — both critical barriers to real-world use.
 
-What keeps pulling me back to this problem is how unforgiving the satellite setting is for neural methods. A view-dependent appearance model that makes perfect sense on a synthetic Blender scene becomes deeply weird when the "camera" is a pushbroom sensor 700 km up and the "lighting" is the sun three weeks later — and once you've made it work on a single crop, the question immediately becomes: how do you scale this to a whole region, a whole country? Training is still expensive — there's no free lunch — but I think we're getting close to the cheapest one on the menu.
+What keeps pulling me back is how unforgiving the satellite setting is for neural methods. A view-dependent appearance model that makes perfect sense on a Blender scene becomes deeply weird when the "camera" is a pushbroom sensor 700 km up and the "lighting" is the sun three weeks later — and once you've made it work on a single crop, the question immediately becomes: how do you scale to a whole country?
 
 ---
 
 So far, my PhD has produced two main contributions:
 
-- **[SAT-NGP](https://ieeexplore.ieee.org/document/10641775)** (IGARSS 2024) — bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.
+- **[SAT-NGP](https://ieeexplore.ieee.org/document/10641775)** (IGARSS 2024)
 
-- **[Snake-NeRF](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html)** (ICCV Workshops 2025) — an out-of-core framework that scales NeRF to very large geographic areas on a single GPU, using 3D tile partitioning, a segmented sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear time complexity, no quality compromise.
+- **[Snake-NeRF](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html)** (ICCV Workshops 2025) 
 
 ---
 
