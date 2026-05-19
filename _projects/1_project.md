@@ -1,7 +1,7 @@
 ---
 layout: page
 title: project 1
-description: Bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality. 
+description: Bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.
 img: assets/img/12.jpg
 importance: 1
 category: work
