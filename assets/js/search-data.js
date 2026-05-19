@@ -402,7 +402,7 @@ ninja.data = [{
           title: 'Snake-NeRF',
           description: "An out-of-core framework that scales NeRF to very large geographic areas on a single GPU, using 3D tile partitioning, a segmented sampler, and a 2×2 progression strategy to avoid boundary artifacts. Linear time complexity, no quality compromise.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects/1_project/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
