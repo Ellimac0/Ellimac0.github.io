@@ -1,48 +1,34 @@
 name: Prettier code formatter
-
 on:
-  pull_request:
-    branches:
-      - master
-      - main
   push:
     branches:
       - master
       - main
-
+  workflow_dispatch: # permet de lancer manuellement depuis l'onglet Actions
 jobs:
-  check:
-    # available images: https://github.com/actions/runner-images#available-images
+  format:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # nécessaire pour push le commit de formatage
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
       - name: Install Prettier 💾
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
-      - name: Prettier Check 🔎
-        id: prettier
-        run: npx prettier . --check
-      - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+      - name: Run Prettier --write ✍️
+        run: npx prettier . --write
+      - name: Commit changes if any 📦
         run: |
-          npx prettier . --write
-          git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
-          npm install -g diff2html-cli
-          diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Upload html diff ⬆️
-        id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: HTML Diff
-          path: diff.html
-          retention-days: 7
-      - name: Dispatch information to repository 🗣️
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          event-type: prettier-failed-on-pr
-          client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add -A
+            git commit -m "style: apply Prettier formatting"
+            git push
+          else
+            echo "No formatting changes needed."
+          fi
