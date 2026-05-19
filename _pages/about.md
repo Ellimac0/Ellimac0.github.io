@@ -23,16 +23,6 @@ latest_posts:
 
 <style>
   .profile { width: 20% !important; }
-
-  @media (max-width: 575.98px) {
-    .profile {
-      width: 20% !important;
-      max-width: 220px;
-      margin: 0 auto 1rem auto;
-      float: none !important;
-      display: block;
-    }
-  }
 </style>
 
 Hi, I'm Camille — a final-year PhD candidate at <a href="https://cnes.fr/">CNES</a>, based in Paris, supervised by Bruno Vallet, Dawa Derksen, and Alexandre Constantin.
