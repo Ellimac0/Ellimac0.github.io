@@ -54,11 +54,10 @@ The knee sits near $$s = 0.25$$ km², beyond which marginal PSNR-per-hour drops 
 </div>
 
 ## DEM Quality vs Tile Area
+DSM accuracy follows the same monotonic trend as PSNR. We use NMAD as the primary indicator: as a robust analog of the standard deviation, $$\mathrm{NMAD}(e) = 1.4826 \times \mathrm{median}(\lvert e - \mathrm{median}(e) \rvert)$$, it is insensitive to outliers on building edges and under vegetation, exactly where local geometry is hardest. From the all-class average curve (Figure 5), NMAD drops from $$8.54$$ m at $$s = 52.28$$ km² to $$2.09$$ m at $$s = 0.125$$ km² — a $$4.1\times$$ improvement.
 
-DSM accuracy follows the same monotonic trend as PSNR. We use NMAD as the primary indicator: as a robust analog of the standard deviation ($$1.4826 \times \mathrm{median}(|e - \mathrm{median}(e)|)$$), it is insensitive to outliers on building edges and under vegetation, exactly where local geometry is hardest. From the all-class average curve (Figure 5), NMAD drops from $$8.54$$ m at $$s = 52.28$$ km² to $$2.09$$ m at $$s = 0.125$$ km² — a $$4.1\times$$ improvement.
 
-{% include figure.liquid loading="eager" path="assets/img/ablation_tile_area_km2_delta_xdem_nmad_avg.png" title="PSNR delta and training time vs tile area" class="img-fluid rounded z-depth-1" %}
-
+{% include figure.liquid loading="eager" path="assets/img/ablation_tile_area_km2_delta_xdem_nmad_avg.png" title="NMAD and training time vs tile area" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-    <strong>Figure 5.</strong> PSNR delta vs. best run as a function of target tile area $$s$$ (log scale, blue, left axis) and total training time (orange, right axis). The blue band is the per-tile $$\pm 1\sigma$$ envelope. The training-time curve grows by more than an order of magnitude over the same range.
+    <strong>Figure 5.</strong> All-class average NMAD as a function of target tile area $$s$$ (log scale, blue, left axis) and total training time (orange, right axis). The blue band is the per-tile $$\pm 1\sigma$$ envelope. NMAD improves monotonically as tiles shrink, with the steepest gains below $$s = 1$$ km².
 </div>
