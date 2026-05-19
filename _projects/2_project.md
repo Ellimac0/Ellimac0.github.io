@@ -63,19 +63,22 @@ DSM accuracy follows the same monotonic trend as PSNR. We use NMAD as the primar
     <strong>Figure 5.</strong> All-class average NMAD as a function of target tile area $$s$$ (log scale, blue, left axis) and total training time (orange, right axis). The blue band is the per-tile $$\pm 1\sigma$$ envelope. NMAD improves monotonically as tiles shrink, with the steepest gains below $$s = 1$$ km².
 </div>
 
-
 ## Qualitative Results
 
 ### Novel View Synthesis
+
 Synthesized views improve monotonically with control grid density. At $$1{\times}1$$ and $$2{\times}2$$, outputs are essentially noise or barely structured blobs (PSNR $$\approx 13$$, SSIM $$\approx 0.28$$). From $$5{\times}6$$ onward, the radial street pattern, building blocks, and the central monument become progressively sharper and better aligned with the reference. SSIM keeps improving monotonically up to $$0.52$$ at $$17{\times}26$$, while PSNR plateaus around $$17$$–$$18$$ — a behavior consistent with NeRF reconstructions, where finer geometric and radiometric detail improves local structure while residual color or exposure shifts cap absolute pixel-wise error.
 {% include figure.liquid loading="eager" path="assets/img/all_erros_nvs.png" title="Novel view synthesis vs control grid density" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
     <strong>Figure 6.</strong> Novel view synthesis from the NeRF pipeline for increasing control grid densities. Leftmost: reference PNEO satellite view. Remaining columns (left to right): synthesized views at $$1{\times}1$$, $$2{\times}2$$, $$5{\times}6$$, $$6{\times}9$$, and $$17{\times}26$$, with PSNR and SSIM reported above each prediction.
 </div>
 
 ### Depth Maps and DSM
+
 DSM accuracy follows the same trend: NMAD drops from $$12.67$$ m at $$1{\times}1$$ to $$3.03$$ m at $$17{\times}26$$, and the predicted surface progressively recovers fine urban structure (buildings, streets, central monument) that is barely distinguishable at coarser resolutions — at low densities the NeRF lacks the encoding capacity to converge to a coherent geometry. Depth is rendered in a near-nadir but not strictly parallel-ray configuration, so residual perspective effects remain visible in the error maps; a true parallel-ray nadir formulation on top of the NeRF renderer is left for future work.
 {% include figure.liquid loading="eager" path="assets/img/all_error_maps.pdf" title="DSM error maps and predicted DSMs vs grid density" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
     <strong>Figure 7.</strong> NeRF-derived DSM reconstruction for increasing control grid densities ($$1{\times}1$$, $$2{\times}2$$, $$5{\times}6$$, $$6{\times}9$$, $$17{\times}26$$). Top row: elevation difference maps between predicted and reference DSMs, with per-configuration NMAD. Bottom row: corresponding predicted DSMs. Scene centered on the <em>Arc de Triomphe</em>.
 </div>
