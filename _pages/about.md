@@ -53,7 +53,7 @@ So far, my PhD has produced two main contributions:
 
 - **[SAT-NGP](https://ieeexplore.ieee.org/document/10641775)** (IGARSS 2024)
 
-- **[Snake-NeRF](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html)** (ICCV Workshops 2025)
+- **[Snake-NeRF](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html)** (ICCV 2025)
 
 ---
 
