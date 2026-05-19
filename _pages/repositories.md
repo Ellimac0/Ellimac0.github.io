@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: My research code is open-source. Feel free to use it, cite it, or open an issue.
 nav: true
 nav_order: 4
