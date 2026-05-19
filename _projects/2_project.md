@@ -62,5 +62,3 @@ DSM accuracy follows the same monotonic trend as PSNR. We use NMAD as the primar
 <div class="caption">
     <strong>Figure 5.</strong> PSNR delta vs. best run as a function of target tile area $$s$$ (log scale, blue, left axis) and total training time (orange, right axis). The blue band is the per-tile $$\pm 1\sigma$$ envelope. The training-time curve grows by more than an order of magnitude over the same range.
 </div>
-
-
