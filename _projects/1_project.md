@@ -9,7 +9,7 @@ giscus_comments: true
 ---
 
 ## Memory and Time Scaling
-
+ 
 Figures 1–3 show how peak PyTorch memory, peak NVML memory, peak CPU RSS, and total training time evolve with the number of tiles $$K$$.
 
 Both GPU memory curves stay bounded across the full $$K$$ range, matching the $$4 \cdot S_{\mathrm{NeRF}} + \mathcal{O}(MN)$$ prediction: PyTorch peak in $$0.59$$–$$1.84$$ GB, NVML peak (including custom kernels and the CUDA context $$C_{\text{ctx}}$$) in $$5.5$$–$$11.0$$ GB.
