@@ -400,7 +400,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
-          description: "with background image",
+          description: "Bringing satellite NeRF training down from tens of hours to about 15 minutes by combining efficient sampling with multi-resolution hash encoding (à la Instant-NGP), with no loss in reconstruction quality.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-snake-nerf",
