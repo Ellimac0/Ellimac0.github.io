@@ -6,7 +6,7 @@ img: assets/img/publication_preview/snake_pattern.gif
 importance: 1
 category: work
 giscus_comments: true
----
+--- 
 
 ## Memory and Time Scaling
 
