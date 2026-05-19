@@ -22,7 +22,7 @@ Both GPU memory curves stay bounded across the full $$K$$ range, matching the $$
 
 CPU memory behaves differently: the two coarsest runs ($$K=1, 4$$) hold the full image cache in host memory and consume $$\sim 98$$ GB of RSS, while all multi-tile runs ($$K \geq 53$$) drop to $$20$$–$$32$$ GB once the cache is itself tiled.
 
-{% include figure.liquid loading="eager" path="assets/img/memory_cpu_nerfxl.png" title="Peak CPU RSS vs number of tiles" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/memory_cpu.png" title="Peak CPU RSS vs number of tiles" class="img-fluid rounded z-depth-1" %}
 
 <div class="caption">
     <strong>Figure 2.</strong> Peak CPU RSS as a function of the number of tiles $$K$$, on the PNEO scene. Solid markers report the maximum over all phases. CPU memory drops by a factor of $${\sim}5$$ between $$K=4$$ and $$K=54$$ because the image cache becomes itself tiled.
@@ -56,3 +56,11 @@ The knee sits near $$s = 0.25$$ km², beyond which marginal PSNR-per-hour drops 
 ## DEM Quality vs Tile Area
 
 DSM accuracy follows the same monotonic trend as PSNR. We use NMAD as the primary indicator: as a robust analog of the standard deviation ($$1.4826 \times \mathrm{median}(|e - \mathrm{median}(e)|)$$), it is insensitive to outliers on building edges and under vegetation, exactly where local geometry is hardest. From the all-class average curve (Figure 5), NMAD drops from $$8.54$$ m at $$s = 52.28$$ km² to $$2.09$$ m at $$s = 0.125$$ km² — a $$4.1\times$$ improvement.
+
+{% include figure.liquid loading="eager" path="assets/img/ablation_tile_area_km2_delta_xdem_nmad_avg.png" title="PSNR delta and training time vs tile area" class="img-fluid rounded z-depth-1" %}
+
+<div class="caption">
+    <strong>Figure 5.</strong> PSNR delta vs. best run as a function of target tile area $$s$$ (log scale, blue, left axis) and total training time (orange, right axis). The blue band is the per-tile $$\pm 1\sigma$$ envelope. The training-time curve grows by more than an order of magnitude over the same range.
+</div>
+
+
