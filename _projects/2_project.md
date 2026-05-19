@@ -80,7 +80,7 @@ Synthesized views improve monotonically with control grid density. At $$1{\times
 DSM accuracy follows the same trend: NMAD drops from $$12.67$$ m at $$1{\times}1$$ to $$3.03$$ m at $$17{\times}26$$, and the predicted surface progressively recovers fine urban structure (buildings, streets, central monument) that is barely distinguishable at coarser resolutions — at low densities the NeRF lacks the encoding capacity to converge to a coherent geometry. Depth is rendered in a near-nadir but not strictly parallel-ray configuration, so residual perspective effects remain visible in the error maps; a true parallel-ray nadir formulation on top of the NeRF renderer is left for future work.
 
 {% include figure.liquid loading="eager" path="assets/img/all_error_maps.png" title="DSM error maps and predicted DSMs vs grid density" class="img-fluid rounded z-depth-1" %}
-
+ 
 <div class="caption">
     <strong>Figure 7.</strong> NeRF-derived DSM reconstruction for increasing control grid densities ($$1{\times}1$$, $$2{\times}2$$, $$5{\times}6$$, $$6{\times}9$$, $$17{\times}26$$). Top row: elevation difference maps between predicted and reference DSMs, with per-configuration NMAD. Bottom row: corresponding predicted DSMs. Scene centered on the <em>Arc de Triomphe</em>.
 </div>
