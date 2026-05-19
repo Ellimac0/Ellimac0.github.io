@@ -7,7 +7,7 @@ importance: 1
 category: work
 giscus_comments: true
 ---
-
+ 
 ## Memory and Time Scaling
 
 Figures 1–3 show how peak PyTorch memory, peak NVML memory, peak CPU RSS, and total training time evolve with the number of tiles $$K$$.
