@@ -59,4 +59,4 @@ So far, my PhD has produced two main contributions:
 
 Before the PhD, I earned my master's in Artificial Intelligence from **Paul Sabatier University** (Toulouse) in 2023.
 
-I'm currently looking for a **postdoctoral position**, ideally on topics around neural scene representations, large-scale 3D reconstruction, or the geometry–vision–remote sensing interface. Don't hesitate to reach out by email if my profile fits something you're building.
+I'm currently looking for my next role, either as a **postdoc** or in **industry** as a **Computer Vision Engineer**, **Research Scientist** or **Applied Scientist**. I'm especially interested in neural scene representations, large-scale 3D reconstruction, and the geometry–vision–remote sensing interface. Don't hesitate to reach out by email if my profile fits something you're building.
