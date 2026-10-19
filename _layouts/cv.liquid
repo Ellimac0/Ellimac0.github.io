@@ -17,7 +17,20 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
-      {% if page.cv_pdf %}
+      {% if page.cv_pdf_en or page.cv_pdf_fr %}
+        <span class="float-right" style="font-size: 1rem">
+          {% if page.cv_pdf_en %}
+            <a href="{{ page.cv_pdf_en | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+              <i class="fa-solid fa-file-pdf"></i> CV (EN)
+            </a>
+          {% endif %}
+          {% if page.cv_pdf_fr %}
+            <a href="{{ page.cv_pdf_fr | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+              <i class="fa-solid fa-file-pdf"></i> CV (FR)
+            </a>
+          {% endif %}
+        </span>
+      {% elsif page.cv_pdf %}
         <a
           {% if page.cv_pdf contains '://' %}
             href="{{ page.cv_pdf }}"
