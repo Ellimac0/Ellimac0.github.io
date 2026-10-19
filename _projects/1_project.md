@@ -5,8 +5,18 @@ description: An out-of-core framework that scales NeRF to very large geographic 
 img: assets/img/publication_preview/snake_pattern.gif
 importance: 1
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
+
+**Camille Billouard, Dawa Derksen, Alexandre Constantin, Bruno Vallet** · 3D-VAST Workshop, ICCV 2025
+
+[Paper](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Billouard_Tile_and_Slide__A_New_Framework_for_Scaling_NeRF_ICCVW_2025_paper.html) · [arXiv](https://arxiv.org/abs/2507.01631) · [Code](https://github.com/Ellimac0/Snake-NeRF) · [Poster](/assets/pdf/poster_iccv-2.pdf)
+
+{% include figure.liquid loading="eager" path="assets/img/publication_preview/snake_pattern.gif" class="img-fluid rounded z-depth-1" %}
+
+## Overview
+
+Snake-NeRF reconstructs **52 km²** of Pléiades Neo imagery (442 tiles) **on a single GPU**. Training is out-of-core: the scene is split into 3D tiles, a segmented sampler only queries the active tile, and a 2×2 progression strategy removes boundary artifacts. Peak GPU memory stays under 2 GB, within 1% of the analytical prediction, and runtime grows near-linearly with area.
 
 ## Memory and Time Scaling
 
