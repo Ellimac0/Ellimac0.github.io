@@ -121,7 +121,19 @@ cv:
     Skills:
       - name: 3D Vision
         icon: fa-solid fa-cube
-        keywords: [3D/4D reconstruction, Multi-view geometry, Camera pose refinement (RPC bundle adjustment), Camera models (pinhole, RPC), NeRF (nerfstudio), Gaussian Splatting (LichtFeld Studio), DSM evaluation (xDEM, LiDAR HD, Pléiades Neo)]
+        keywords:
+          [
+            3D/4D reconstruction,
+            Multi-view geometry,
+            Camera pose refinement (RPC bundle adjustment),
+            Camera models (pinhole,
+            RPC),
+            NeRF (nerfstudio),
+            Gaussian Splatting (LichtFeld Studio),
+            DSM evaluation (xDEM,
+            LiDAR HD,
+            Pléiades Neo),
+          ]
       - name: ML & Systems
         icon: fa-solid fa-microchip
         keywords: [PyTorch, Custom CUDA kernels, GPU memory profiling, Training on SLURM / HPC clusters]
